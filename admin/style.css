@@ -1,0 +1,157 @@
+.container {
+    background: #fff;
+}
+
+.tooltip-inner {
+    background: #11568c !important;
+    max-width: 370px !important;
+}
+
+.dashicons-editor-help {
+    color: #11568c;
+}
+
+.msweb-plugins-subscriber-menu-item {
+    border: 1px dotted #ccc;
+    padding: 10px;
+}
+
+.subscriber-smtp-form {
+    max-width: 450px;
+    display: none;
+}
+
+.subscriber-smtp-form.visible {
+    display: block;
+}
+
+.save-email-loader-container {
+    position: relative;
+    float: right;
+}
+
+.msweb_ms_subscriber-smtp-server-other-options {
+    display: none;
+}
+
+.msweb_ms_subscriber-smtp-server-other-options.visible {
+    display: block;
+}
+
+p {
+    margin-top: 5px !important;
+}
+
+label {
+    font-weight: bold;
+}
+
+.panel-heading {
+    background-color: #009688;
+    color: #fff;
+    padding: 8px 75px;
+    margin: 5px;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.panel-heading.minimized:before, .panel-heading.maximized:before {
+    content: "";
+    background: url(images/plus-minus-small-thin.png);
+    width: 37px;
+    height: 35px;
+    display: block;
+    position: absolute;
+    margin-left: -55px;
+}
+
+.panel-heading.minimized:before {
+    background-position-x: -73px;
+}
+
+.panel-heading.maximized:before {
+    background-position-x: -110px;
+}
+
+[msweb-plugins-subscriber-output-find-page-message] {
+    padding: 7px;
+}
+
+span.msweb-subscribe__finded-title {
+    border: 1px solid silver;
+    padding: 3px;
+    width: 100%;
+    display: block;
+    margin: -10px 0;
+    cursor: pointer;
+}
+
+span.msweb-subscribe__finded-title:hover {
+    background: rgba(37, 235, 250, 0.24);
+}
+
+.msweb-plugins-subscriber-use-only-on-page {
+    display: none;
+}
+
+.msweb-plugins-subscriber-use-only-on-page.visible {
+    display: block;
+}
+
+.msweb-plugins-subscriber-close-button {
+    background: #f83f37;
+    border: 1px solid #7a7b7e;
+    width: 35px;
+    height: 35px;
+    border-radius: 30px;
+    position: absolute;
+    right: -5px;
+    top: -5px;
+    cursor: pointer;
+    color: white;
+    font-size: 20px;
+    text-align: center;
+    font-weight: bold;
+}
+
+.msweb-subscribe-warrning {
+    border: 2px solid #ffb556;
+    border-radius: 8px;
+    padding: 10px;
+    margin: 10px 0px;
+}
+
+.msweb-subscribe__form {
+    position: relative;
+    bottom: unset;
+    left: unset;
+    z-index: 1;
+}
+
+.ms-subscriber-admin-row {
+    border-bottom: 2px solid silver;
+    padding: 10px 10px;
+    margin: 0 !important;
+}
+
+.msweb-subscribe__news-button {
+    display: block;
+    top: 95px;
+    display: block;
+    position: absolute;
+    bottom: unset;
+    width: unset;
+    height: unset;
+    transform: rotate(-90deg);
+    padding: 0 10px;
+    z-index: 1;
+}
+
+.msweb-plugins-subscriber-output-find-page-message {
+    max-height: 250px;
+    overflow: auto;
+}
+
+#msweb_ms_subscriber-editor_ifr {
+    min-height: 150px;
+}

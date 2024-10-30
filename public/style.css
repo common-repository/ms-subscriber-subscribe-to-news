@@ -1,0 +1,260 @@
+/*
+ * @author Mixail Sayapin
+ * https://ms-web.ru
+ */
+body {
+    background: #fff;
+}
+
+.msweb-subscribe__form {
+    display: block;
+    width: 350px;
+    max-width: 95%;
+    min-height: 100px;
+    background: #3F51B5;
+    border-radius: 7px;
+    position: fixed;
+    bottom: 20px;
+    left: 10px;
+    box-shadow: 7px 5px 13px #0000007a;
+    -ms-user-select: none;
+    -moz-user-select: none;
+    -khtml-user-select: none;
+    -webkit-user-select: none;
+    padding: 10px 0px;
+    z-index: 99999999;
+}
+
+.msweb-subscribe__form img.msweb-subscribe__email {
+    width: 80px;
+    height: 80px;
+    float: right;
+    margin: 30px 10px 10px 10px;
+}
+
+span.msweb-subscribe__close {
+    position: absolute;
+    width: 60px;
+    height: 20px;
+    color: #fff;
+    font-size: 13px;
+    font-weight: bold;
+    line-height: 10px;
+    right: 10px;
+    cursor: pointer;
+    text-decoration: underline;
+}
+
+.msweb-subscribe__title {
+    color: #fff;
+    padding-left: 5px;
+    padding-top: 7px;
+    font-size: 16pt;
+    text-align: center;
+    width: 250px;
+    font-family: Arial, Helvetica, sans-serif;
+    letter-spacing: 0px;
+    word-spacing: 0px;
+    font-weight: normal;
+    text-decoration: none;
+    font-style: normal;
+    font-variant: normal;
+    text-transform: none;
+}
+
+.msweb-subscribe__input {
+    margin-left: 20px;
+    margin-top: 5px;
+    border-radius: 3px;
+    padding: 0px 6px;
+    line-height: 38px;
+    width: 210px;
+    background: #fff;
+    color: #6b6b6b;
+    box-shadow: inset 0px -1px 0px 1px #0000007d;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 14px;
+    letter-spacing: 0px;
+    word-spacing: 0px;
+    font-weight: normal;
+    text-decoration: none;
+    font-style: normal;
+    font-variant: normal;
+    text-transform: none;
+}
+
+.msweb-subscribe__button {
+    width: 150px;
+    text-align: center;
+    background: #4CAF50;
+    color: #fff;
+    margin-left: 70px;
+    margin-top: 5px;
+    border-radius: 5px;
+    padding: 5px 10px;
+    font-weight: bold;
+    line-height: 14px;
+    font-size: 12pt;
+    box-shadow: 0 0 2px black;
+    cursor: pointer;
+    transition: 0.1s;
+    -o-transition: all 0.1s;
+    -ms-transition: all 0.1s;
+    -moz-transition: all 0.1s;
+    -webkit-transition: all 0.1s;
+}
+
+.msweb-subscribe__button:active {
+    box-shadow: inset 0 0 13px black;
+    font-size: 11pt;
+}
+
+.msweb-subscribe__news-button {
+    background: #3F51B5;
+    color: #fff;
+    width: 240px;
+    height: 35px;
+    position: fixed;
+    transform: rotate(-90deg);
+    bottom: 21%;
+    left: -105px;
+    padding: 5px 0px;
+    font-weight: bold;
+    font-size: 12pt;
+    border-radius: 0px 0px 10px 10px;
+    cursor: pointer;
+    text-align: center;
+    padding-bottom: 7px;
+    z-index: 99999999;
+    display: none;
+    line-height: 40px;
+}
+
+.msweb-subscribe__button:hover {
+    box-shadow: inset 0 0 10px black;
+}
+
+/** star animation begin **/
+.msweb-subscribe__shine_star {
+    position: absolute;
+    width: 0;
+    height: 0;
+    left: 10px;
+    top: 18px;
+    opacity: 0;
+    -webkit-animation: shine .7s;
+    animation: msweb-subscribe__shine .7s;
+}
+
+.msweb-subscribe__shine_star div {
+    position: absolute;
+    width: 5px;
+    height: 5px;
+    box-shadow: 0 0 14px 7px rgba(195, 234, 230, 1);
+    border-radius: 50%;
+    background: #C3EAE6;
+}
+
+.msweb-subscribe__shine_star div::before {
+    content: '';
+    display: block;
+    position: absolute;
+    margin: 0 0 0 -22px;
+    width: 50px;
+    height: 2px;
+    background: #C3EAE6;
+    border-radius: 50%;
+    box-shadow: 0 0 3px 1px rgba(195, 234, 230, 1);
+}
+
+.msweb-subscribe__shine_star div::after {
+    content: '';
+    display: block;
+    position: absolute;
+    margin: 0 0 0 -30px;
+    width: 65px;
+    height: 2px;
+    background: #C3EAE6;
+    border-radius: 50%;
+    box-shadow: 0 0 4px 0px rgba(195, 234, 230, 1);
+    -webkit-transform: rotate(80deg) scale(2.2); /* Chrome 4+, Op 15+, Saf 3.1, iOS Saf 3.2+ */
+    -moz-transform: rotate(80deg) scale(2.2); /* Fx 3.5-15 */
+    -ms-transform: rotate(80deg) scale(2.2); /* IE 9 */
+    -o-transform: rotate(80deg) scale(2.2); /* Op 10.5-12 */
+    transform: rotate(80deg) scale(2.2); /* Fx 16+, IE 10+ */
+}
+
+.msweb-subscribe__shine_star div span {
+    display: block;
+    position: absolute;
+    margin: 0 0 0 -17px;
+    width: 39px;
+    height: 2px;
+    background: #C3EAE6;
+    border-radius: 50%;
+    box-shadow: 0 0 19px 1px rgba(195, 234, 230, 1);
+    -webkit-transform: rotate(-56deg) scale(2.2); /* Chrome 4+, Op 15+, Saf 3.1, iOS Saf 3.2+ */
+    -moz-transform: rotate(-56deg) scale(2.2); /* Fx 3.5-15 */
+    -ms-transform: rotate(-56deg) scale(2.2); /* IE 9 */
+    -o-transform: rotate(-56deg) scale(2.2); /* Op 10.5-12 */
+    transform: rotate(-56deg) scale(2.2); /* Fx 16+, IE 10+ */
+}
+
+@-webkit-keyframes msweb-subscribe__shine {
+    0% {
+        opacity: 1;
+        -webkit-transform: rotate(0deg) scale(0, 0); /* Chrome 4+, Op 15+, Saf 3.1, iOS Saf 3.2+ */
+        -moz-transform: rotate(0deg) scale(0, 0); /* Fx 3.5-15 */
+        -ms-transform: rotate(0deg) scale(0, 0); /* IE 9 */
+        -o-transform: rotate(0deg) scale(0, 0); /* Op 10.5-12 */
+        transform: rotate(0deg) scale(0, 0); /* Fx 16+, IE 10+ */
+    }
+    50% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0;
+        left: 300px;
+        top: 50px;
+        -webkit-transform: rotate(95deg) scale(1, 1); /* Chrome 4+, Op 15+, Saf 3.1, iOS Saf 3.2+ */
+        -moz-transform: rotate(95deg) scale(1, 1); /* Fx 3.5-15 */
+        -ms-transform: rotate(95deg) scale(1, 1); /* IE 9 */
+        -o-transform: rotate(95deg) scale(1, 1); /* Op 10.5-12 */
+        transform: rotate(95deg) scale(1, 1); /* Fx 16+, IE 10+ */
+    }
+}
+
+@keyframes msweb-subscribe__shine {
+    0% {
+        opacity: 1;
+        -webkit-transform: rotate(0deg) scale(0, 0); /* Chrome 4+, Op 15+, Saf 3.1, iOS Saf 3.2+ */
+        -moz-transform: rotate(0deg) scale(0, 0); /* Fx 3.5-15 */
+        -ms-transform: rotate(0deg) scale(0, 0); /* IE 9 */
+        -o-transform: rotate(0deg) scale(0, 0); /* Op 10.5-12 */
+        transform: rotate(0deg) scale(0, 0); /* Fx 16+, IE 10+ */
+    }
+    50% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0;
+        left: 300px;
+        top: 50px;
+        -webkit-transform: rotate(95deg) scale(1, 1); /* Chrome 4+, Op 15+, Saf 3.1, iOS Saf 3.2+ */
+        -moz-transform: rotate(95deg) scale(1, 1); /* Fx 3.5-15 */
+        -ms-transform: rotate(95deg) scale(1, 1); /* IE 9 */
+        -o-transform: rotate(95deg) scale(1, 1); /* Op 10.5-12 */
+        transform: rotate(95deg) scale(1, 1); /* Fx 16+, IE 10+ */
+    }
+}
+
+/** star animation end **/
+
+p.msweb-subscribe__onsubscribemess {
+    padding: 10px;
+    color: #fff;
+    width: 250px;
+    display: inline-block;
+    font-size: 18px;
+    font-family: Arial;
+}

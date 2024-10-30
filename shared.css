@@ -1,0 +1,49 @@
+/*
+ * Author Mixail Sayapin
+ *  https://ms-web.ru
+ */
+
+#toplevel_page_ms-plugins a div.wp-menu-image {
+    background: url("images/tiger-50x50.png");
+    background-size: 30px;
+    width: 30px;
+    height: 30px;
+    margin: 0px 3px;
+}
+
+.container {
+    background: #fff;
+    padding: 10px;
+}
+
+.col-2 {
+    width: 16.66666666666667%;
+    float: left;
+}
+
+.col-10 {
+    width: 83.33333333333333%;
+    float: left;
+}
+
+.row {
+    display: flex;
+}
+
+.ms-plugins-main-preview {
+    text-align: center;
+    padding-top: 30px;
+}
+
+.ms-plugins-main-preview span:before {
+    font-size: 50px;
+    color: #0eb5d6;
+    margin: -15px;
+}
+
+.ms-plugins-main-item {
+    border: 1px silver solid;
+    display: flex;
+    padding: 10px;
+    margin: 5px;
+}
